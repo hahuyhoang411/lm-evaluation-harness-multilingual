@@ -191,45 +191,29 @@ def is_equiv(x1: str, x2: str) -> bool:
 
 def get_unnormalized_answer(text: str) -> str:
     INVALID_ANSWER = "[invalidanswer]"
-    # Ensure that the text ends with a newline to capture answers at the end of the string
-    text += "\n"
-    match = re.search(
-        r"Réponse finale : ###(.*?)(?:\n|$)",
-        text
-    )
-    match_v1 = re.search(
-        r"Réponse finale :###(.*?)(?:\n|$)",
-        text
-    )
-    match_v2 = re.search(
-        r"Réponse finale:###(.*?)(?:\n|$)",
-        text
-    )
-    match_v3 = re.search(
-        r"###(.*?)(?:\n|$)",
-        text
-    )
-    match_v4 = re.search(
-        r"Réponse finale: (.*?)(?:\n|$)",
-        text
-    )
-    if match or match_v1 or match_v2 or match_v3 or match_v4:
-        try:
-            return match.group(1).strip()
-        except:
-            try:
-                return match_v1.group(1).strip()
-            except:
-                try:
-                    return match_v2.group(1).strip()
-                except:
-                    try:
-                        return match_v3.group(1).strip()
-                    except:
-                        try:
-                            return match_v4.group(1).strip()
-                        except:
-                            return INVALID_ANSWER
+    
+    # Look for boxed content first
+    boxed_match = re.search(r"\\boxed\{(.*?)\}", text)
+    if boxed_match:
+        return boxed_match.group(1).strip()
+    
+    # As a fallback, still try the "Réponse finale" patterns
+    match = re.search(r"Réponse finale : ###(.*?)(?:\n|$)", text)
+    match_v1 = re.search(r"Réponse finale :###(.*?)(?:\n|$)", text)
+    match_v2 = re.search(r"Réponse finale:###(.*?)(?:\n|$)", text)
+    match_v3 = re.search(r"###(.*?)(?:\n|$)", text)
+    match_v4 = re.search(r"Réponse finale: (.*?)(?:\n|$)", text)
+    
+    if match:
+        return match.group(1).strip()
+    elif match_v1:
+        return match_v1.group(1).strip()
+    elif match_v2:
+        return match_v2.group(1).strip()
+    elif match_v3:
+        return match_v3.group(1).strip()
+    elif match_v4:
+        return match_v4.group(1).strip()
     else:
         return INVALID_ANSWER
 

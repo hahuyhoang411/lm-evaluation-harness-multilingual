@@ -22,7 +22,7 @@ filter_list:
  - name: "custom-extract"
    filter:
      - function: "regex"
-       regex_pattern: "\\boxed\{([A-D])\}"
+       regex_pattern: "\\boxed{([A-D])}"
      - function: "take_first"
 num_fewshot: 5
 metadata:

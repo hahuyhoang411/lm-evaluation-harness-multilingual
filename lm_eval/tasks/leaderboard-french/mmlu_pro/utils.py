@@ -7,7 +7,7 @@ def doc_to_text(doc):
     for i in range(len(options)):
         doc_to_text += f"{string.ascii_uppercase[i]}. {options[i]}\n"
     
-    doc_to_text += "Format your final answer in \\boxed{([A-D])}. Réponse:"
+    doc_to_text += "Formatez votre réponse finale en \\boxed{([A-D])}. Réponse:\n"
     return doc_to_text
 
 def doc_to_choice(doc):

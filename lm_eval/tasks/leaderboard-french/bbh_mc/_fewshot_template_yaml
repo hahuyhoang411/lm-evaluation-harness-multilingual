@@ -1,7 +1,7 @@
 dataset_path: le-leadboard/bbh-fr
 output_type: generate_until
 test_split: test
-doc_to_text: 'Question:\n{{input}}\n\nFormatez votre réponse finale en \\boxed{([A-D])}. Résponse:\n'
+doc_to_text: 'Question:\n{{input}}\n\nFormatez votre réponse finale en \\boxed{}. Résponse:\n'
 doc_to_target: "{{target}}"
 generation_kwargs:
   until: []
@@ -16,7 +16,7 @@ filter_list:
  - name: "custom-extract"
    filter:
      - function: "regex"
-       regex_pattern: "\\\\boxed\\{([A-D])\\}"
+       regex_pattern: "\\\\boxed\\{([^}]*)\\}"
      - function: "take_first"
 num_fewshot: 0
 fewshot_config:

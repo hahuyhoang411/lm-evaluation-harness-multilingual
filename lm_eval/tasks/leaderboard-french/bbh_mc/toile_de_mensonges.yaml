@@ -2,6 +2,8 @@ dataset_name: toile_de_mensonges
 description: >
   Évaluez une fonction booléenne aléatoire exprimée sous forme de problème de mots.
 # doc_to_choice: ["Oui", "Non"]
+doc_to_text: 'Question:\n{{input}}\nFormatez votre réponse finale comme suit : \boxed{<option>}, où <option> est soit "Oui", soit "Non". Résponse:\n'
+
 fewshot_config:
   sampler: first_n
   samples:

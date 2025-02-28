@@ -1,6 +1,8 @@
 dataset_name: jugement_causal
 description: "Répondez aux questions sur l'attribution causale."
 # doc_to_choice: ["Oui", "Non"]
+doc_to_text: 'Question:\n{{input}}\nFormatez votre réponse finale comme suit : \boxed{<option>}, où <option> est soit "Oui", soit "Non". Résponse:\n'
+
 fewshot_config:
   sampler: first_n
   samples:

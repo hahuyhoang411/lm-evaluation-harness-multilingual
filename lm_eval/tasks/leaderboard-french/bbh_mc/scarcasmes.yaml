@@ -6,6 +6,8 @@ description: >
   Les phrases sarcastiques contiennent souvent des énonciations satiriques ou ironiques, 
   des hyperboles, des remarques ambivalentes ou spirituelles.
 # doc_to_choice: ["(A)", "(B)"]
+doc_to_text: 'Question:\n{{input}}\nFormatez votre réponse finale comme suit : \\boxed{(<option>)}, où <option> est la lettre de la réponse choisie entre parenthèses. Résponse:\n'
+
 fewshot_config:
   sampler: first_n
   samples:

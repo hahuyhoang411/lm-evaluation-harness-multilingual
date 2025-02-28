@@ -4,6 +4,8 @@ description: 'Déterminez si une phrase artificiellement construite en rapport a
 
         '
 # doc_to_choice: ["Oui", "Non"]
+doc_to_text: 'Question:\n{{input}}\nFormatez votre réponse finale comme suit : \boxed{<option>}, où <option> est soit "Oui", soit "Non". Résponse:\n'
+
 fewshot_config:
   sampler: first_n
   samples:

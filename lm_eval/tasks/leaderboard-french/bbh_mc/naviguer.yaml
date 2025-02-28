@@ -2,6 +2,8 @@ dataset_name: naviguer
 description: >
   Étant donné une série d'instructions de navigation, déterminez si l'on revient au point de départ.
 # doc_to_choice: ["Oui", "Non"]
+doc_to_text: 'Question:\n{{input}}\nFormatez votre réponse finale comme suit : \boxed{<option>}, où <option> est soit "Oui", soit "Non". Résponse:\n'
+
 fewshot_config:
   sampler: first_n
   samples:

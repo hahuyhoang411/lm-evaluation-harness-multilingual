@@ -2,6 +2,7 @@ dataset_name: déduction_logique_sept_objets
 description: >
   Une tâche de déduction logique qui nécessite de déduire l'ordre d'une séquence d'objets.
 # doc_to_choice: ["(A)", "(B)", "(C)", "(D)", "(E)", "(F)", "(G)"]
+doc_to_text: 'Question:\n{{input}}\nFormatez votre réponse finale comme suit : \\boxed{(<option>)}, où <option> est la lettre de la réponse choisie entre parenthèses. Résponse:\n'
 fewshot_config:
   sampler: first_n
   samples:

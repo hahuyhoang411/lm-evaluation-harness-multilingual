@@ -2,6 +2,8 @@ dataset_name: sophismes_formels
 description: >
   Distinguez les arguments déductivement valides des sophismes formels.
 # doc_to_choice: ["valide", "invalidee"]
+doc_to_text: 'Question:\n{{input}}\nFormatez votre réponse finale comme suit : \boxed{<option>}, où <option> est soit "valide", soit "invalidee". Résponse:\n'
+
 fewshot_config:
   sampler: first_n
   samples:

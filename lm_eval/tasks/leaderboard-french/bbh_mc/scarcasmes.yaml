@@ -5,7 +5,7 @@ description: >
   faites pour blesser les sentiments de quelqu'un ou pour critiquer quelque chose de manière humoristique." 
   Les phrases sarcastiques contiennent souvent des énonciations satiriques ou ironiques, 
   des hyperboles, des remarques ambivalentes ou spirituelles.
-doc_to_choice: ["(A)", "(B)"]
+# doc_to_choice: ["(A)", "(B)"]
 fewshot_config:
   sampler: first_n
   samples:

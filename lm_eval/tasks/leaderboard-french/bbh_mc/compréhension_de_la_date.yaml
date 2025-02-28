@@ -1,7 +1,7 @@
 dataset_name: compréhension_de_la_date
 description: >
   Déduire la date à partir du contexte.
-doc_to_choice: ["(A)", "(B)", "(C)", "(D)", "(E)", "(F)"]
+# doc_to_choice: ["(A)", "(B)", "(C)", "(D)", "(E)", "(F)"]
 fewshot_config:
   sampler: first_n
   samples:

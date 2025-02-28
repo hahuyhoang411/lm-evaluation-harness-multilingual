@@ -1,7 +1,7 @@
 dataset_name: expressions_booléennes
 description: >
   Évaluez le résultat d'une expression booléenne aléatoire.
-doc_to_choice: ["Incorrect", "Vrai"]
+# doc_to_choice: ["Incorrect", "Vrai"]
 fewshot_config:
   sampler: first_n
   samples:

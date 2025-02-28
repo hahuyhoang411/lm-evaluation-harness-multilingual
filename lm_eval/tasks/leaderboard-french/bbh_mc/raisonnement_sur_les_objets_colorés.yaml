@@ -1,7 +1,7 @@
 dataset_name: raisonnement_sur_les_objets_colorés
 description: >
   Répondez à des questions extrêmement simples sur les couleurs des objets sur une surface.
-doc_to_choice: ["(A)", "(B)", "(C)", "(D)", "(E)", "(F)", "(G)", "(H)", "(I)", "(J)", "(K)", "(L)", "(M)", "(N)", "(O)", "(P)", "(Q)", "(R)"]
+# doc_to_choice: ["(A)", "(B)", "(C)", "(D)", "(E)", "(F)", "(G)", "(H)", "(I)", "(J)", "(K)", "(L)", "(M)", "(N)", "(O)", "(P)", "(Q)", "(R)"]
 fewshot_config:
   sampler: first_n
   samples:

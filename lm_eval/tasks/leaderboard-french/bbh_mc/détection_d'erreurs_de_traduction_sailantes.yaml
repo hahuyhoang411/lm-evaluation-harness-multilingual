@@ -1,7 +1,7 @@
 dataset_name: détection_d'erreurs_de_traduction_sailantes
 description: >
   Détectez le type d'erreur dans une traduction anglaise d'une phrase source allemande.
-doc_to_choice: ["(A)", "(B)", "(C)", "(D)", "(E)", "(F)"]
+# doc_to_choice: ["(A)", "(B)", "(C)", "(D)", "(E)", "(F)"]
 fewshot_config:
   sampler: first_n
   samples:

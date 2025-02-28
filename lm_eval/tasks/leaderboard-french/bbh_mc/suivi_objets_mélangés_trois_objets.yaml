@@ -1,7 +1,7 @@
 dataset_name: suivi_objets_mélangés_trois_objets
 description: >
   Une tâche qui nécessite de déterminer les positions finales d'un ensemble d'objets, étant donné leurs positions initiales et une description d'une séquence d'échanges.
-doc_to_choice: ["(A)", "(B)", "(C)"]
+# doc_to_choice: ["(A)", "(B)", "(C)"]
 fewshot_config:
   sampler: first_n
   samples:

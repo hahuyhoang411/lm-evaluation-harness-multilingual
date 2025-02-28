@@ -1,7 +1,7 @@
 dataset_name: toile_de_mensonges
 description: >
   Évaluez une fonction booléenne aléatoire exprimée sous forme de problème de mots.
-doc_to_choice: ["Oui", "Non"]
+# doc_to_choice: ["Oui", "Non"]
 fewshot_config:
   sampler: first_n
   samples:

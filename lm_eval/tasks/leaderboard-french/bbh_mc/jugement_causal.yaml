@@ -1,6 +1,6 @@
 dataset_name: jugement_causal
 description: "Répondez aux questions sur l'attribution causale."
-doc_to_choice: ["Oui", "Non"]
+# doc_to_choice: ["Oui", "Non"]
 fewshot_config:
   sampler: first_n
   samples:

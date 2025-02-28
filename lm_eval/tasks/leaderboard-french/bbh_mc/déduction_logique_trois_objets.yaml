@@ -1,7 +1,7 @@
 dataset_name: déduction_logique_trois_objets
 description: >
   Une tâche de déduction logique qui nécessite de déduire l'ordre d'une séquence d'objets.
-doc_to_choice: ["(A)", "(B)", "(C)"]
+# doc_to_choice: ["(A)", "(B)", "(C)"]
 fewshot_config:
   sampler: first_n
   samples:

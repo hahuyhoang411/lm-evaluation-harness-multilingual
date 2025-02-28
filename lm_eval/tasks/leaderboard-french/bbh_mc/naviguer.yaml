@@ -1,7 +1,7 @@
 dataset_name: naviguer
 description: >
   Étant donné une série d'instructions de navigation, déterminez si l'on revient au point de départ.
-doc_to_choice: ["Oui", "Non"]
+# doc_to_choice: ["Oui", "Non"]
 fewshot_config:
   sampler: first_n
   samples:

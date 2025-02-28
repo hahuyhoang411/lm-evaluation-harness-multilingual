@@ -2,7 +2,7 @@ dataset_name: formes_géométriques
 description: 'Nommez des formes géométriques à partir de leurs chemins SVG.
 
         '
-doc_to_choice: ["(A)", "(B)", "(C)", "(D)", "(E)", "(F)", "(G)", "(H)", "(I)", "(J)", "(K)"]
+# doc_to_choice: ["(A)", "(B)", "(C)", "(D)", "(E)", "(F)", "(G)", "(H)", "(I)", "(J)", "(K)"]
 fewshot_config:
   sampler: first_n
   samples:

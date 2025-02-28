@@ -3,7 +3,7 @@ description: 'Déterminez si une phrase artificiellement construite en rapport a
   le sport est plausible ou Non.
 
         '
-doc_to_choice: ["Oui", "Non"]
+# doc_to_choice: ["Oui", "Non"]
 fewshot_config:
   sampler: first_n
   samples:

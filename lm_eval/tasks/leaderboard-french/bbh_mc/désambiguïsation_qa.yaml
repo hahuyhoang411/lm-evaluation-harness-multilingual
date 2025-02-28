@@ -1,7 +1,7 @@
 dataset_name: désambiguïsation_qa
 description: >
   Clarifiez le sens des phrases avec des pronoms ambigus.
-doc_to_choice: ["(A)", "(B)", "(C)"]
+# doc_to_choice: ["(A)", "(B)", "(C)"]
 fewshot_config:
   sampler: first_n
   samples:

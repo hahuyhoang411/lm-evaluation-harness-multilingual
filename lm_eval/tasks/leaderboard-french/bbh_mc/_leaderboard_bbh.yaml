@@ -22,3 +22,7 @@ task:
   - leaderboard_bbh_suivi_objets_mélangés_sept_objets
   - leaderboard_bbh_suivi_objets_mélangés_trois_objets
   - leaderboard_bbh_toile_de_mensonges
+aggregate_metric_list:
+  - metric: exact_match
+    aggregation: mean
+    weight_by_size: true

@@ -6,7 +6,7 @@ training_split: train
 validation_split: train
 test_split: null
 doc_to_text: "Quelle est la réponse correcte à cette question : {{problem}}\nChoix :\nA. {{choice1}}\nB. {{choice2}}\nC. {{choice3}}\nD. {{choice4}}\nFormatez votre réponse finale comme suit : \\boxed{<option>}, où <option> est la lettre de la réponse choisie. Réponse : "
-doc_to_target: {{answer}}
+doc_to_target: answer
 # doc_to_choice: ["(A)", "(B)", "(C)", "(D)"]
 generation_kwargs:
   until: []

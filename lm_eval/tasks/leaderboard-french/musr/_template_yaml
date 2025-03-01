@@ -1,7 +1,7 @@
 dataset_path: le-leadboard/musr-fr
 output_type: generate_until
 doc_to_text: !function utils.doc_to_text
-doc_to_target: "{{answer_choice}}"
+doc_to_target: !function utils.doc_to_target
 # doc_to_choice: "{{choices}}"
 generation_kwargs:
   until: []
@@ -20,4 +20,4 @@ filter_list:
      - function: "take_first"
 num_fewshot: 0
 metadata:
-  version: 2.0
+  version: 3.0

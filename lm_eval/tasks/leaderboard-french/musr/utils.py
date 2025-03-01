@@ -8,8 +8,7 @@ def doc_to_choice(doc):
     return ast.literal_eval(doc["choices"])
 
 
-DOC_TO_TEXT = "Récit:\n{narrative}\n\n" "Question:\n{question}\n\n" "Choix:\n{choices}\n\n" "Formatez votre réponse finale comme suit : \\boxed{{nombres}}. Réponse:\n"
-
+DOC_TO_TEXT = "Quelle est la réponse correcte à cette question:\n{narrative}\n\n" "Question:\n{question}\n\n" "Choix:\n{choices}\n\n" "Formatez votre réponse finale comme suit : \\boxed{{option}}, où <option> est la nombres de la réponse choisie. Réponse:\n"
 
 def doc_to_text(doc):
     """
@@ -20,7 +19,7 @@ def doc_to_text(doc):
         choices += f"{i} - {choice}\n"
 
     text = DOC_TO_TEXT.format(
-        narrative=doc["narrative"], question=doc["question"], choices=choices, option="nombres"
+        narrative=doc["narrative"], question=doc["question"], choices=choices, option="<option>"
     )
 
     return text

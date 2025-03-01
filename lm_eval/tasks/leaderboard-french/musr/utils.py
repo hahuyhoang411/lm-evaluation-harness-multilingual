@@ -20,7 +20,7 @@ def doc_to_text(doc):
         choices += f"{i+1} - {choice}\n"
 
     text = DOC_TO_TEXT.format(
-        narrative=doc["narrative"], question=doc["question"], choices=choices, option="<option>"
+        narrative=doc["narrative"], question=doc["question"], choices=choices, option="nombres"
     )
 
     return text

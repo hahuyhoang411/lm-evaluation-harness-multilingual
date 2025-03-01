@@ -2,7 +2,7 @@ dataset_name: désambiguïsation_qa
 description: >
   Clarifiez le sens des phrases avec des pronoms ambigus.
 # doc_to_choice: ["(A)", "(B)", "(C)"]
-doc_to_text: 'Question:\n{{input}}\nFormatez votre réponse finale comme suit : \\boxed{(<option>)}, où <option> est la lettre de la réponse choisie entre parenthèses. Résponse:\n'
+doc_to_text: 'Question:\n{{input}}\nFormatez votre réponse finale comme suit : \\boxed{<option>}, où <option> est la lettre de la réponse choisie. Résponse:\n'
 
 fewshot_config:
   sampler: first_n

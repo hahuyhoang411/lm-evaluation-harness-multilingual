@@ -2,7 +2,7 @@ dataset_name: suivi_objets_mélangés_cinq_objets
 description: >
   Une tâche qui nécessite de déterminer les positions finales d'un ensemble d'objets, étant donné leurs positions initiales et une description d'une séquence d'échanges.
 # doc_to_choice: ["(A)", "(B)", "(C)", "(D)", "(E)"]
-doc_to_text: 'Question:\n{{input}}\nFormatez votre réponse finale comme suit : \\boxed{(<option>)}, où <option> est la lettre de la réponse choisie entre parenthèses. Résponse:\n'
+doc_to_text: 'Question:\n{{input}}\nFormatez votre réponse finale comme suit : \\boxed{<option>}, où <option> est la lettre de la réponse choisie. Résponse:\n'
 
 fewshot_config:
   sampler: first_n

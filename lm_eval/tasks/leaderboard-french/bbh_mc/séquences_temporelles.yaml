@@ -2,7 +2,7 @@ dataset_name: séquences_temporelles
 description: >
   Description de la tâche : Répondez aux questions sur les moments où certains événements ont pu se produire.
 # doc_to_choice: ["(A)", "(B)", "(C)", "(D)"]
-doc_to_text: 'Question:\n{{input}}\nFormatez votre réponse finale comme suit : \\boxed{(<option>)}, où <option> est la lettre de la réponse choisie entre parenthèses. Résponse:\n'
+doc_to_text: 'Question:\n{{input}}\nFormatez votre réponse finale comme suit : \\boxed{<option>}, où <option> est la lettre de la réponse choisie. Résponse:\n'
 
 fewshot_config:
   sampler: first_n

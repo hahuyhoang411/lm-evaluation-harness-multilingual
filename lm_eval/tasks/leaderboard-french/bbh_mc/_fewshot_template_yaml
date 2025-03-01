@@ -21,4 +21,4 @@ num_fewshot: 0
 fewshot_config:
   sampler: first_n
 metadata:
-  version: 0.1
+  version: 0.2

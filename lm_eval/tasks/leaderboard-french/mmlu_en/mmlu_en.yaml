@@ -7,8 +7,6 @@ fewshot_config:
   sampler: first_n
 output_type: generate_until
 generation_kwargs:
-  until:
-    - "Question:"
   do_sample: false
   temperature: 0
   max_gen_toks: 16384

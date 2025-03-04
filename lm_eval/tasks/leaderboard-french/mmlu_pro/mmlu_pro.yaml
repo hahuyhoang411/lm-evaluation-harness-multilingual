@@ -24,6 +24,6 @@ filter_list:
      - function: "regex"
        regex_pattern: "\\\\boxed\\{([A-D])\\}"
      - function: "take_first"
-num_fewshot: 5
+num_fewshot: 0
 metadata:
   version: 0.1

@@ -6,3 +6,4 @@ task:
   - leaderboard_math_hard_fr
   - leaderboard_ifeval_fr
   - leaderboard_musr_fr
+  - leaderboard_mmlu_en

@@ -1,0 +1,28 @@
+dataset_path: le-leadboard/gpqa-fr
+output_type: generate_until
+process_docs: !function utils.process_docs
+training_split: train
+# Because huggingface dataset only has train split
+validation_split: train
+test_split: null
+doc_to_text: "Quelle est la réponse correcte à cette question : {{problem}}\nChoix :\nA. {{choice1}}\nB. {{choice2}}\nC. {{choice3}}\nD. {{choice4}}\nFormatez votre réponse finale comme suit : \\boxed{<option>}, où <option> est la lettre de la réponse choisie. Réponse : "
+doc_to_target: answer
+# doc_to_choice: ["(A)", "(B)", "(C)", "(D)"]
+generation_kwargs:
+  until: []
+  do_sample: false
+  temperature: 0.0
+  max_gen_toks: 16384
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: true
+filter_list:
+ - name: "custom-extract"
+   filter:
+     - function: "regex"
+       regex_pattern: "\\\\boxed\\{([^}]*)\\}"
+     - function: "take_first"
+num_fewshot: 0
+metadata:
+  version: 2.0
